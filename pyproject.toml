@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "poetry"
+version = "0.1.0"
+description = "poetry virtual env"
+authors = ["ValKurta <valentyn.kurta@gmail.com>"]
+license = "No"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aiosqlite = "^0.20.0"
+flask = "^3.0.2"
+gunicorn = "^22.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = ">5.4.0"
+black = "^24.3.0"
+flake8 = "^7.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.flake8]
+ignore = ['E231', 'E241']
+per-file-ignores = [
+    '__init__.py:F401',
+]
+max-line-length = 88
+count = true

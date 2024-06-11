@@ -1,0 +1,5 @@
+Docker commands:
+1.
+docker build -t personal-assistant-image .
+2.
+docker run -it personal-assistant-image poetry run python main.py
